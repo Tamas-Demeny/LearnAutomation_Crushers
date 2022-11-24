@@ -17,7 +17,6 @@ dependencies {
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.19.0'
     implementation group: 'com.codeborne', name: 'selenide', version: '6.9.0'
-
 }
 
 test {
