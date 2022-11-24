@@ -1,3 +1,5 @@
+package basetests;
+
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;

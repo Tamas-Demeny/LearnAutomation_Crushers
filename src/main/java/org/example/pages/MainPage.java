@@ -1,4 +1,4 @@
-package org.example.basepages;
+package org.example.pages;
 
 public class MainPage {
 }
