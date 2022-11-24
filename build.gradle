@@ -1,8 +1,10 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'io.qameta.allure' version '2.11.0'
 }
 
-group 'org.example'
+group 'LearnAutomation'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,10 +12,11 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
-    implementation group: 'com.codeborne', name: 'selenide', version: '6.9.0'
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.19.0'
-
+    implementation group: 'com.codeborne', name: 'selenide', version: '6.9.0'
 }
 
 test {
