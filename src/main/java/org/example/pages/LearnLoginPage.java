@@ -1,7 +1,4 @@
 package org.example.pages;
 
-
-
-public class MainPage {
-
+public class LearnLoginPage {
 }
