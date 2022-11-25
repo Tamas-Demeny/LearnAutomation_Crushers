@@ -1,6 +1,8 @@
 package loginTests;
 
 import basetests.BaseTest;
+import org.example.pages.LearnMainPage;
+import org.example.pages.MainPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
@@ -14,21 +16,16 @@ public class LoginTests extends BaseTest {
 
     @Test (dataProvider = "Log In credentials")
     public void loginViaEmail(String email, String password){
-        WebElement logInButton = $(By.xpath("//div[text()='Log In']"));
-        logInButton.click();
-        WebElement emailField = $("#username");
-        emailField.sendKeys(email);
-        WebElement continueButton = $("#kc-login-next");
-        continueButton.click();
-        WebElement passwordField = $("#password");
-        passwordField.sendKeys(password);
-        WebElement signInButton = $("#kc-login");
-        signInButton.click();
-        WebElement profileDropdown = $(By.xpath("//div[@id='global_menu_toggle']/preceding-sibling::div[1]"));
-        profileDropdown.click();
-        WebElement signOutButton = $(By.xpath("//div[@class='uui-caption' and text()='Sign out']"));
-        assertTrue(signOutButton.isDisplayed(),"Sign out element is not present");
-        signOutButton.click();
+        LearnMainPage mainPage = new LearnMainPage()
+                .goToLoginPage()
+                .loginViaEmail(email,password);
+        assertTrue(mainPage.checkIsLoggedIn(),"Sign out element is not present");
+        mainPage.signOut();
+    }
+
+    @Test (dataProvider = "Log In credentials")
+    public void loginViaFacebook(){
+
     }
 
     @DataProvider (name = "Log In credentials")
