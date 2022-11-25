@@ -9,6 +9,8 @@ public class LearnMainPage {
     private WebElement logInButton = $(By.xpath("//div[text()='Log In']"));
     private WebElement profileDropdown = $(By.xpath("//div[@id='global_menu_toggle']/preceding-sibling::div[1]"));
     private WebElement signOutButton = $(By.xpath("//div[@class='uui-caption' and text()='Sign out']"));
+    private WebElement searchField = $(".uui-input");
+    private WebElement acceptAllCookiesButton = $("#onetrust-accept-btn-handler");
 
     public LearnLoginPage goToLoginPage(){
         logInButton.click();
@@ -23,5 +25,15 @@ public class LearnMainPage {
     public LearnMainPage signOut(){
         signOutButton.click();
         return this;
+    }
+
+    public LearnCatalogPage clickSearchField(){
+        searchField.click();
+        return new LearnCatalogPage();
+    }
+
+    public LearnMainPage dealWithCookies(){
+        acceptAllCookiesButton.click();
+        return new LearnMainPage();
     }
 }
