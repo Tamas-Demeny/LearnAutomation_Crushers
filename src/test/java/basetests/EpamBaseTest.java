@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.example.pages.HomePage;
 import org.example.pages.HowWeDoItPage;
+import org.example.pages.OurWorkPage;
 import org.example.pages.ServicesPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +16,7 @@ public class EpamBaseTest {
 
    @Test
     public void openHomePage() {
-        HowWeDoItPage howWeDoItPage = new HomePage().open().openHowWeDoItPage();
+        OurWorkPage howWeDoItPage = new HomePage().open().openOurWorkPage();
         //Assert.assertEquals(hp.getWelcomLabel(),"Engineering the Future");
     }
 
