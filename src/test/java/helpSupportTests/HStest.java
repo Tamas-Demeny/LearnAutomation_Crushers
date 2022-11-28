@@ -50,21 +50,32 @@ public class HStest extends BaseTest {
         Thread.sleep(5000);
         hsButton.click();
         Thread.sleep(5000);
-        WebElement homeTab = $(".inapphelp-tabs a:first-child");
+        WebDriverRunner.getWebDriver().switchTo().frame(iframe);
+        WebElement homeTab = $("a[class='wZhsh3W inapphelp-tab']");
         Thread.sleep(5000);
         homeTab.click();
-        WebElement contactSupportMessage = $(".inapphelp-main-page p");
-        Assert.assertEquals(contactSupportMessage.getText(),"\"Encountered a bug or got a question? We're here to help.\"");
+        WebElement contactSupportMessage = $(".inapphelp-card__description");
+        Assert.assertEquals(contactSupportMessage.getText(),"Encountered a bug or got a question? We're here to help.");
     }
 
     @Test
     public void contactSupportAppears() throws InterruptedException {
+        WebElement iframe = $("[src=\"https://menu.epam.com/inapphelp/PublicMode?app=learn-public&lang=en\"]");
         WebElement hsButton = $(".inAppHelpButton img");
         Thread.sleep(5000);
         hsButton.click();
         Thread.sleep(5000);
-        WebElement ContactSupportTab = $(".inapphelp-report-page div:first-child input");
-
+        WebDriverRunner.getWebDriver().switchTo().frame(iframe);
+        WebElement homeTab = $("a[class='wZhsh3W inapphelp-tab']");
+        Thread.sleep(5000);
+        homeTab.click();
+        WebElement ContactSupportTab = $("p[class='_2R20rIA inapphelp-card__description']");
+        ContactSupportTab.click();
+        SelenideElement emailField = $("input[placeholder='Your email']");
+        Thread.sleep(5000);
+        SelenideElement messageField = $( "textarea[maxlength='2000']");
+        Thread.sleep(5000);
+        Assert.assertTrue(emailField.isDisplayed()&messageField.isDisplayed());
 
     }
 }
