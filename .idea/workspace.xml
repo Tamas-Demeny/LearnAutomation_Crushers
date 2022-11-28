@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="Automated clicking on language DropDown Menu, clicking on english and clicking on hungary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +69,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="61dd0616-c884-4a7d-aace-32801ccaf576" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -104,30 +98,7 @@
       <command value="LearnAutomation_Crushers [allureReport]" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectHungaryLanguage">
-    <configuration name="BaseTest.openStartPage (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;basetests.BaseTest.openStartPage&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectGermanLanguage">
     <configuration name="EpamBaseTest.openStartPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,6 +168,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LanguageChangeTests.selectGermanLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectGermanLanguage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LanguageChangeTests.selectHungaryLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectEnglishLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
         <item itemvalue="Gradle.EpamBaseTest.openStartPage" />
-        <item itemvalue="Gradle.BaseTest.openStartPage (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +233,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669203874677</updated>
     </task>
+    <task id="LOCAL-00001" summary="Automated clicking on language DropDown Menu, clicking on english and clicking on hungary">
+      <created>1669649503593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669649503593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +253,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Automated clicking on language DropDown Menu, clicking on english and clicking on hungary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automated clicking on language DropDown Menu, clicking on english and clicking on hungary" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

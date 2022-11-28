@@ -37,4 +37,14 @@ public class LanguageChangeTests extends EpamBaseTest {
         Assert.assertEquals("https://careers.epam.hu/", currentUrl);
 
     }
+
+    @Test
+    public void selectGermanLanguage(){
+        var germanLanguage = new HomePage()
+                .clickLanguageDropDown()
+                .clickDach();
+
+        String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals("https://www.epam.de/", currentUrl);
+    }
 }
