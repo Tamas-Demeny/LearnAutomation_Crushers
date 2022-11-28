@@ -19,6 +19,6 @@ public class BaseTest {
         String url = WebDriverRunner.url();
 
         Assert.assertEquals(startPage, url,
-                "We did not get to the expected page.");
+                "We did not get to the expected page, actual page is: " + url);
     }
 }
