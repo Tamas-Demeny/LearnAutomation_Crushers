@@ -10,10 +10,10 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LearnLoginPage {
 
-    private WebElement emailField = $("#username");
+    private SelenideElement emailField = $("#username");
     private SelenideElement continueButton = $("#kc-login-next");
-    private WebElement passwordField = $("#password");
-    private WebElement signInButton = $("#kc-login");
+    private SelenideElement passwordField = $("#password");
+    private SelenideElement signInButton = $("#kc-login");
     private SelenideElement accountDetailsMessage = $("#header2");
     private SelenideElement logInOptionMessage = $("#chooseContainer");
 
@@ -44,9 +44,13 @@ public class LearnLoginPage {
        return logInOptionMessage.isDisplayed();
     }
     private void logInFlow(String email, String password){
+        emailField.shouldBe(Condition.enabled);
         emailField.sendKeys(email);
+        continueButton.shouldBe(Condition.enabled);
         continueButton.click();
+        passwordField.shouldBe(Condition.enabled);
         passwordField.sendKeys(password);
+        signInButton.shouldBe(Condition.enabled);
         signInButton.click();
     }
 
