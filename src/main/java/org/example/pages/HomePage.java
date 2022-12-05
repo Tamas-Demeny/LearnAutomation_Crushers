@@ -1,6 +1,5 @@
 package org.example.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.example.BasePage;
 import org.example.HelperMethods.SupportMethods;
@@ -22,7 +21,9 @@ public class HomePage extends BasePage {
     SelenideElement contactUsPageButton = $(By.xpath("//span[contains(text(),\"CONTACT US\")  and @class=\"cta-button__text\"]"));
     SelenideElement changeLanguagePageButton = $(By.xpath("//*[contains(text(),\"Global\")  and @class=\"location-selector__button\"]"));
     SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
+
     public HomePage(){
+        openBasePage();
     }
     public HomePage open(){
         welcomeLabel.shouldBe(visible);
