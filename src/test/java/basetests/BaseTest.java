@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
 
-    @BeforeMethod @Test
+
     public void openStartPage() {
         String startPage = "https://learn.epam.com/start";
 
