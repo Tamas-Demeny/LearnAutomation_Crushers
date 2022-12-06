@@ -1,16 +1,10 @@
 package epamcomautomation.contactus;
 
-import basetests.BaseTest;
-import basetests.EpamBaseTest;
-import org.example.pages.ContactUsPage;
-import org.example.pages.HomePage;
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.sql.SQLOutput;
 import java.util.List;
-import java.util.Objects;
 
 public class ContactUsTests extends ContactUsBaseTest {
 
@@ -19,40 +13,109 @@ public class ContactUsTests extends ContactUsBaseTest {
         contactUsPage.contactUsPageValidation();
     }
 
-    @Test (dataProvider = "data-provider")
-    public void inquiryDropDownListElementsPresence(String data) {
-//        contactUsPage.openInquiryList();
+    @Test
+    public void inquiryDropDownListElementsPresence() {
+        contactUsPage.clickButton(contactUsPage.inquiryDropDownList);
+
         List<String> lista = contactUsPage.inquiryListElements();
-//
-//        System.out.println(contactUsPage.inquiryListElements());
-//
-//        System.out.println(contactUsPage.inquiryListElements());
-//
-        System.out.println(contactUsPage.inquiryListElements());
-//        System.out.println(lista);
-        Assert.assertTrue(lista.stream().anyMatch(s -> Objects.equals(data, s)));
+
+        Assert.assertEquals(lista.size(), 14);
     }
 
-    @DataProvider(name = "data-provider")
-    public Object[][] dpMethod(){
-        return new Object[][] {{"general information request"},
-                                {"talk to sales in north america"},
-                                {"talk to sales in continental europe"},
-                                {"talk to sales in the uk"},
-                                {"talk to sales in northern europe"},
-                                {"talk to sales in apac"},
-                                {"talk to the consulting team"},
-                                {"press inquiry"},
-                                {"careers"},
-                                {"employment verification"},
-                                {"partner relations"},
-                                {"investor relations"},
-                                {"analyst relations"},
-                                {"website feedback"}};
+    /*  @DataProvider(name = "data-provider")
+      public Object[][] dpMethod(){
+          return new Object[][] {{"general information request"},
+                                  {"talk to sales in north america"},
+                                  {"talk to sales in continental europe"},
+                                  {"talk to sales in the uk"},
+                                  {"talk to sales in northern europe"},
+                                  {"talk to sales in apac"},
+                                  {"talk to the consulting team"},
+                                  {"press inquiry"},
+                                  {"careers"},
+                                  {"employment verification"},
+                                  {"partner relations"},
+                                  {"investor relations"},
+                                  {"analyst relations"},
+                                  {"website feedback"}};
+      }
+  */
+    @Test
+    public void errorForNotCompletedField() {
+        contactUsPage.sendKeys(contactUsPage.lastNameField, "John");
+        contactUsPage.sendKeys(contactUsPage.emailField, "john.johnson@yahoo.com");
+        contactUsPage.sendKeys(contactUsPage.phoneField, "40757675768");
+        contactUsPage.sendKeys(contactUsPage.companyField, "Luxoft");
+
+        contactUsPage.clickButton(contactUsPage.inquiryDropDownList);
+        contactUsPage.clickButton(contactUsPage.careersInquiryOption);
+
+        contactUsPage.clickButton(contactUsPage.positionDropDownButton);
+        contactUsPage.clickButton(contactUsPage.otherPositionOption);
+
+        contactUsPage.clickButton(contactUsPage.locationDropDownButton);
+        contactUsPage.clickButton(contactUsPage.romaniaLocationOption);
+
+        contactUsPage.clickButton(contactUsPage.cityDropDownButton);
+        contactUsPage.clickButton(contactUsPage.bucharestCityOption);
+
+        contactUsPage.clickButton(contactUsPage.hearAboutEpamDropDownButton);
+        contactUsPage.clickButton(contactUsPage.partnerHearAboutOption);
+
+        contactUsPage.clickButton(contactUsPage.submitButton);
+
+        Assert.assertEquals(contactUsPage.missingFieldErrorMessage.getText().toLowerCase(), "this is a required field",
+                "The message was: " + contactUsPage.missingFieldErrorMessage.getText());
     }
 
     @Test
-    public void errorForNotCompletedField() {
+    public void errorMessageAllNotCompletedEssentialFields() {
+        contactUsPage.clickButton(contactUsPage.submitButton);
 
+        Assert.assertEquals(contactUsPage.allErrorMessages.size(), 5);
+    }
+
+    @Test
+    public void cookieExternalLink() {
+        contactUsPage.clickButton(contactUsPage.cookiesPoliciesLink);
+
+        String cookiesUrl = "https://www.epam.com/cookie-policy";
+        String currentUrl = WebDriverRunner.url();
+
+        Assert.assertEquals(currentUrl, cookiesUrl);
+    }
+
+    @Test /*(dependsOnMethods = "errorMessageAllNotCompletedEssentialFields")*/
+    public void completeFieldsWithError() {
+        contactUsPage.clickButton(contactUsPage.submitButton);
+
+        contactUsPage.sendKeys(contactUsPage.firstNameField, "Thomas");
+        contactUsPage.sendKeys(contactUsPage.lastNameField, "McCloud");
+        contactUsPage.sendKeys(contactUsPage.emailField, "qwerty@yahoo.com");
+        contactUsPage.sendKeys(contactUsPage.phoneField, "8787987567");
+
+        contactUsPage.clickButton(contactUsPage.hearAboutEpamDropDownButton);
+        contactUsPage.clickButton(contactUsPage.eventHearAboutOption);
+
+        Assert.assertEquals(contactUsPage.allErrorMessages.size(), 0);
+    }
+
+    @Test
+    public void invalidEmailInput() {
+        contactUsPage.sendKeys(contactUsPage.emailField, "qwer234");
+        contactUsPage.clickButton(contactUsPage.phoneField);
+        contactUsPage.emailField.hover();
+
+        Assert.assertEquals(contactUsPage.incorrectEmail.getText().toLowerCase(), "incorrect email format");
+    }
+
+    @Test
+    public void invalidPhoneNumberInput() {
+        contactUsPage.sendKeys(contactUsPage.phoneField, "qwerty");
+        contactUsPage.clickButton(contactUsPage.emailField);
+        contactUsPage.phoneField.hover();
+
+        Assert.assertEquals(contactUsPage.incorrectPhoneNUmber.getText().toLowerCase(),
+                "only digits, space, plus, and semicolon are allowed. maximum number of characters is 50.");
     }
 }
