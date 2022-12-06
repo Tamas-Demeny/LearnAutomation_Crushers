@@ -16,7 +16,6 @@ import static com.codeborne.selenide.Selenide.$;
 public class HomePage extends BasePage {
 
     SelenideElement welcomeLabel = $(By.xpath("//span[contains(text(),\"Engineering the Future\")]"));
-
     SelenideElement servicesPageButton = SupportMethods.getPage("Services");
     SelenideElement howWeDoItPageButton = SupportMethods.getPage("How We Do It");
     SelenideElement ourWorkPageButton = SupportMethods.getPage("Our Work");
@@ -26,6 +25,11 @@ public class HomePage extends BasePage {
     SelenideElement contactUsPageButton = $(By.xpath("//span[contains(text(),\"CONTACT US\")  and @class=\"cta-button__text\"]"));
     SelenideElement changeLanguagePageButton = $(By.xpath("//*[contains(text(),\"Global\")  and @class=\"location-selector__button\"]"));
     SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
+    SelenideElement dropDownMenu = $(By.xpath("//div[@class=\"location-selector-ui header__control\"]/button"));
+    SelenideElement locationSelectorTitle = $(By.xpath("//strong[@class=\"location-selector__title\"]"));
+    SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
+    SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
+    SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
 
     public HomePage(){
         openBasePage();
@@ -38,7 +42,6 @@ public class HomePage extends BasePage {
     public String getWelcomLabel(){
         return welcomeLabel.getText();
     }
-
 
     public ServicesPage openServicesPage(){
         servicesPageButton.click();
@@ -84,13 +87,6 @@ public class HomePage extends BasePage {
         return new SearchPage();
     }
 
-
-}
-    SelenideElement dropDownMenu = $(By.xpath("//div[@class=\"location-selector-ui header__control\"]/button"));
-    SelenideElement locationSelectorTitle = $(By.xpath("//strong[@class=\"location-selector__title\"]"));
-    SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
-    SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
-    SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
     public HomePage clickLanguageDropDown() {
         dropDownMenu.click();
         return this;

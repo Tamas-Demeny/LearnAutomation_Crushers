@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added Pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DEV-EPAM-NavigationBar" />
+        <entry key="$PROJECT_DIR$" value="DEV-EPAM" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -221,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EpamBaseTest.openHomePage" />
-        <item itemvalue="Gradle.EpamBaseTest.openHowWeDoItPageTest" />
-        <item itemvalue="Gradle.BaseTest.openStartPage (1)" />
-        <item itemvalue="Gradle.LearnAutomation_Crushers [:clean]" />
         <item itemvalue="Gradle.LearnAutomation_Crushers [clean]" />
+        <item itemvalue="Gradle.LearnAutomation_Crushers [:clean]" />
+        <item itemvalue="Gradle.EpamBaseTest.openHowWeDoItPageTest" />
+        <item itemvalue="Gradle.EpamBaseTest.openHomePage" />
+        <item itemvalue="Gradle.BaseTest.openStartPage (1)" />
       </list>
     </recent_temporary>
   </component>
