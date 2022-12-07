@@ -6,6 +6,9 @@ import org.example.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static com.codeborne.selenide.Selenide.webdriver;
+import static com.codeborne.selenide.WebDriverConditions.url;
+
 public class LanguageChangeTests extends EpamBaseTest {
 
     @Test
@@ -33,8 +36,10 @@ public class LanguageChangeTests extends EpamBaseTest {
                 .clickLanguageDropDown()
                 .clickHungary();
 
+
+        webdriver().shouldHave(url("https://careers.epam.hu/"));
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-        Assert.assertEquals("https://careers.epam.hu/", currentUrl);
+        Assert.assertEquals( currentUrl, "https://careers.epam.hu/");
 
     }
 
@@ -44,7 +49,8 @@ public class LanguageChangeTests extends EpamBaseTest {
                 .clickLanguageDropDown()
                 .clickDach();
 
+        webdriver().shouldHave(url("https://www.epam.de/"));
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-        Assert.assertEquals("https://www.epam.de/", currentUrl);
+        Assert.assertEquals(currentUrl, "https://www.epam.de/" );
     }
 }

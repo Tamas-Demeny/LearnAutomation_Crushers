@@ -30,7 +30,7 @@ public class HomePage extends BasePage {
     SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
     SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
     SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
-
+    //SelenideElement hungaryFoote = $(By.xpath("//*[@class='footer__brands-title']");
     public HomePage(){
         openBasePage();
     }

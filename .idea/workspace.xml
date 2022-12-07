@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added Pages">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="HomePage code refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +106,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EpamBaseTest.openHomePage">
-    <configuration name="BaseTest.openStartPage (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectGermanLanguage">
+    <configuration name="LanguageChangeTests.dropDownMenuAppears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.BaseTest.openStartPage&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.dropDownMenuAppears&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -129,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EpamBaseTest.openHomePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectEnglishLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -142,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.EpamBaseTest.openHomePage&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectEnglishLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EpamBaseTest.openHowWeDoItPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectGermanLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.EpamBaseTest.openHowWeDoItPageTest&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectGermanLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LearnAutomation_Crushers [:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectHungaryLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -186,12 +187,14 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectHungaryLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -219,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectEnglishLanguage" />
         <item itemvalue="Gradle.LearnAutomation_Crushers [clean]" />
-        <item itemvalue="Gradle.LearnAutomation_Crushers [:clean]" />
-        <item itemvalue="Gradle.EpamBaseTest.openHowWeDoItPageTest" />
-        <item itemvalue="Gradle.EpamBaseTest.openHomePage" />
-        <item itemvalue="Gradle.BaseTest.openStartPage (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669635164227</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HomePage code refactoring">
+      <created>1670316097681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670316097681</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +269,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Pages" />
+    <MESSAGE value="HomePage code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomePage code refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
