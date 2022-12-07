@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="firstTestHelpSupport">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="first4TestsHelpSupport">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/helpSupportTests/HStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpSupportTests/HStest.java" afterDir="false" />
     </list>
@@ -101,7 +101,7 @@
       <command value="LearnAutomation_Crushers [allureReport]" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HStest">
+  <component name="RunManager" selected="Gradle.HStest.sendMessageHS">
     <configuration name="HStest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,7 +125,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HStest.contactSupportAppears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HStest.attachFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -138,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;helpSupportTests.HStest.contactSupportAppears&quot;" />
+            <option value="&quot;helpSupportTests.HStest.attachFile&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +148,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HStest.openHS" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HStest.numberOfCharactersMessage1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +161,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;helpSupportTests.HStest.openHS&quot;" />
+            <option value="&quot;helpSupportTests.HStest.numberOfCharactersMessage1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +171,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HStest.sendEmailAndMessageHS" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HStest.numberOfCharactersMessage2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;helpSupportTests.HStest.sendEmailAndMessageHS&quot;" />
+            <option value="&quot;helpSupportTests.HStest.numberOfCharactersMessage2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,7 +194,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HStest.verifyHomeTabHS" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HStest.sendMessageHS" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,7 +207,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;helpSupportTests.HStest.verifyHomeTabHS&quot;" />
+            <option value="&quot;helpSupportTests.HStest.sendMessageHS&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HStest.sendMessageHS" />
+        <item itemvalue="Gradle.HStest.attachFile" />
+        <item itemvalue="Gradle.HStest.numberOfCharactersMessage2" />
+        <item itemvalue="Gradle.HStest.numberOfCharactersMessage1" />
         <item itemvalue="Gradle.HStest" />
-        <item itemvalue="Gradle.HStest.contactSupportAppears" />
-        <item itemvalue="Gradle.HStest.verifyHomeTabHS" />
-        <item itemvalue="Gradle.HStest.sendEmailAndMessageHS" />
-        <item itemvalue="Gradle.HStest.openHS" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669383909357</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first4TestsHelpSupport">
+      <created>1669632185210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669632185210</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +266,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firstTestHelpSupport" />
-    <option name="LAST_COMMIT_MESSAGE" value="firstTestHelpSupport" />
+    <MESSAGE value="first4TestsHelpSupport" />
+    <option name="LAST_COMMIT_MESSAGE" value="first4TestsHelpSupport" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
