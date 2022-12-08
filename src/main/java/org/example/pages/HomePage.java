@@ -30,7 +30,8 @@ public class HomePage extends BasePage {
     SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
     SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
     SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
-    //SelenideElement hungaryFoote = $(By.xpath("//*[@class='footer__brands-title']");
+    SelenideElement polandLink = $(By.xpath("//li[@class=\"location-selector__item\"][11]/a"));
+
     public HomePage(){
         openBasePage();
     }
@@ -115,6 +116,11 @@ public class HomePage extends BasePage {
     public GermanHomePage clickDach(){
         germanLink.click();
         return new GermanHomePage();
+    }
+
+    public PolandHomePage clickPolska(){
+        polandLink.click();
+        return new PolandHomePage();
     }
 
 }

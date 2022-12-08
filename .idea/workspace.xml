@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="HomePage code refactoring">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="german and hungarian languages tests refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/PolandHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
@@ -106,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectGermanLanguage">
+  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectPolishLanguage">
     <configuration name="LanguageChangeTests.dropDownMenuAppears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,7 +200,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LearnAutomation_Crushers [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectPolishLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,23 +211,25 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectPolishLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LanguageChangeTests.selectPolishLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
         <item itemvalue="Gradle.LanguageChangeTests.selectEnglishLanguage" />
-        <item itemvalue="Gradle.LearnAutomation_Crushers [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670316097681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="german and hungarian languages tests refactoring">
+      <created>1670401522720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670401522720</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +280,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Pages" />
     <MESSAGE value="HomePage code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomePage code refactoring" />
+    <MESSAGE value="german and hungarian languages tests refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="german and hungarian languages tests refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
