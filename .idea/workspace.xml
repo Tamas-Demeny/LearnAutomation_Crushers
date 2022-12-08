@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="german and hungarian languages tests refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/PolandHomePage.java" afterDir="false" />
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="Added Poland home page and poland language test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,30 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LanguageChangeTests.selectPolishLanguage">
+  <component name="RunManager" selected="Gradle.LanguageChangeTests">
+    <configuration name="LanguageChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LanguageChangeTests.dropDownMenuAppears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -122,29 +143,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.dropDownMenuAppears&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LanguageChangeTests.selectEnglishLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectEnglishLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LanguageChangeTests" />
         <item itemvalue="Gradle.LanguageChangeTests.selectPolishLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
-        <item itemvalue="Gradle.LanguageChangeTests.selectEnglishLanguage" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670401522720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Poland home page and poland language test">
+      <created>1670484218440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670484218440</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +286,8 @@
     <MESSAGE value="added Pages" />
     <MESSAGE value="HomePage code refactoring" />
     <MESSAGE value="german and hungarian languages tests refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="german and hungarian languages tests refactoring" />
+    <MESSAGE value="Added Poland home page and poland language test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Poland home page and poland language test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

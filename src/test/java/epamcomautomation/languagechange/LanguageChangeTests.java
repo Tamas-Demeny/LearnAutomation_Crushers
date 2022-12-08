@@ -3,7 +3,6 @@ package epamcomautomation.languagechange;
 import basetests.EpamBaseTest;
 import com.codeborne.selenide.WebDriverRunner;
 import org.example.pages.HomePage;
-import org.example.pages.PolandHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,7 +16,6 @@ public class LanguageChangeTests extends EpamBaseTest {
         var dropDownMenu = new HomePage()
                 .clickLanguageDropDown()
                 .checkLanguageDropDownVisible();
-
     }
 
     @Test
@@ -41,7 +39,6 @@ public class LanguageChangeTests extends EpamBaseTest {
         webdriver().shouldHave(url("https://careers.epam.hu/"));
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         Assert.assertEquals( currentUrl, "https://careers.epam.hu/");
-
     }
 
     @Test
@@ -65,8 +62,5 @@ public class LanguageChangeTests extends EpamBaseTest {
         webdriver().shouldHave(url("https://careers.epam-poland.pl/"));
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         Assert.assertEquals(currentUrl, "https://careers.epam-poland.pl/" );
-
-
-
     }
 }
