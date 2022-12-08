@@ -15,7 +15,7 @@ public class ContactUsPage extends BasePage {
     SelenideElement titlePage = $(By.xpath("//h1[contains(@class,\"title-ui\")]"));
     SelenideElement formTitle = $(By.xpath("(//h2[contains(@class,\"title-ui\")])[1]"));
     public SelenideElement inquiryDropDownList = $(By.xpath("(//b[@role=\"presentation\"])[1]"));
-    ElementsCollection inquiryListElements = $$x("//li[contains(@id,\"who-we-are\")]");
+    public ElementsCollection inquiryListElements = $$x("//li[contains(@id,\"who-we-are\")]");
     public SelenideElement firstNameField = $(By.name("user_first_name"));
     public SelenideElement lastNameField = $(By.name("user_last_name"));
     public SelenideElement emailField = $(By.name("user_email"));
@@ -25,7 +25,7 @@ public class ContactUsPage extends BasePage {
     public SelenideElement bucharestCityOption = $(By.xpath("//li[contains(text(),'Bucharest')]"));
     public SelenideElement positionDropDownButton = $(By.xpath("//span[contains(text(),'Position')]/parent::span"));
     public SelenideElement hearAboutEpamDropDownButton = $(By.xpath("//span[contains(text(),'How')]/parent::span"));
-    public SelenideElement locationDropDownButton = $(By.xpath("//span[contains(@class,'country-filled')]"));
+    public SelenideElement locationDropDownButton = $(By.xpath("(//span[contains(@class,'select2-selection__arrow')])[3]"));
     public SelenideElement careersInquiryOption = $(By.xpath("//li[contains(@class,'select')][contains(text(),'Careers')]"));
     public SelenideElement otherPositionOption = $(By.xpath("//li[contains(@class,'select')][contains(text(),'Other')]"));
     public SelenideElement romaniaLocationOption = $(By.xpath("//li[contains(@class,'select')][contains(text(),'Romania')]"));

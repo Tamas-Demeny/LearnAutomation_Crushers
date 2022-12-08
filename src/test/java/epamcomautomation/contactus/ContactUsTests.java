@@ -17,38 +17,20 @@ public class ContactUsTests extends ContactUsBaseTest {
     public void inquiryDropDownListElementsPresence() {
         contactUsPage.clickButton(contactUsPage.inquiryDropDownList);
 
-        List<String> lista = contactUsPage.inquiryListElements();
+        List<String> elementList = contactUsPage.inquiryListElements();
 
-        Assert.assertEquals(lista.size(), 14);
+        Assert.assertEquals(elementList.size(), 14);
     }
 
-    /*  @DataProvider(name = "data-provider")
-      public Object[][] dpMethod(){
-          return new Object[][] {{"general information request"},
-                                  {"talk to sales in north america"},
-                                  {"talk to sales in continental europe"},
-                                  {"talk to sales in the uk"},
-                                  {"talk to sales in northern europe"},
-                                  {"talk to sales in apac"},
-                                  {"talk to the consulting team"},
-                                  {"press inquiry"},
-                                  {"careers"},
-                                  {"employment verification"},
-                                  {"partner relations"},
-                                  {"investor relations"},
-                                  {"analyst relations"},
-                                  {"website feedback"}};
-      }
-  */
     @Test
     public void errorForNotCompletedField() {
+        contactUsPage.clickButton(contactUsPage.inquiryDropDownList);
+        contactUsPage.clickButton(contactUsPage.careersInquiryOption);
+
         contactUsPage.sendKeys(contactUsPage.lastNameField, "John");
         contactUsPage.sendKeys(contactUsPage.emailField, "john.johnson@yahoo.com");
         contactUsPage.sendKeys(contactUsPage.phoneField, "40757675768");
         contactUsPage.sendKeys(contactUsPage.companyField, "Luxoft");
-
-        contactUsPage.clickButton(contactUsPage.inquiryDropDownList);
-        contactUsPage.clickButton(contactUsPage.careersInquiryOption);
 
         contactUsPage.clickButton(contactUsPage.positionDropDownButton);
         contactUsPage.clickButton(contactUsPage.otherPositionOption);
@@ -70,6 +52,9 @@ public class ContactUsTests extends ContactUsBaseTest {
 
     @Test
     public void errorMessageAllNotCompletedEssentialFields() {
+        contactUsPage.clickButton(contactUsPage.locationDropDownButton);
+        contactUsPage.clickButton(contactUsPage.romaniaLocationOption);
+
         contactUsPage.clickButton(contactUsPage.submitButton);
 
         Assert.assertEquals(contactUsPage.allErrorMessages.size(), 5);
@@ -85,7 +70,7 @@ public class ContactUsTests extends ContactUsBaseTest {
         Assert.assertEquals(currentUrl, cookiesUrl);
     }
 
-    @Test /*(dependsOnMethods = "errorMessageAllNotCompletedEssentialFields")*/
+    @Test
     public void completeFieldsWithError() {
         contactUsPage.clickButton(contactUsPage.submitButton);
 
@@ -93,6 +78,9 @@ public class ContactUsTests extends ContactUsBaseTest {
         contactUsPage.sendKeys(contactUsPage.lastNameField, "McCloud");
         contactUsPage.sendKeys(contactUsPage.emailField, "qwerty@yahoo.com");
         contactUsPage.sendKeys(contactUsPage.phoneField, "8787987567");
+
+        contactUsPage.clickButton(contactUsPage.locationDropDownButton);
+        contactUsPage.clickButton(contactUsPage.romaniaLocationOption);
 
         contactUsPage.clickButton(contactUsPage.hearAboutEpamDropDownButton);
         contactUsPage.clickButton(contactUsPage.eventHearAboutOption);
