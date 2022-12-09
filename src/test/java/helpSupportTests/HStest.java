@@ -3,21 +3,15 @@ package helpSupportTests;
 import basetests.BaseTest;
 import com.codeborne.selenide.*;
 import com.codeborne.selenide.commands.ShouldBe;
-import com.codeborne.selenide.conditions.Visible;
-import com.codeborne.selenide.impl.WebDriverContainer;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.example.Main;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.Random;
+
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
@@ -79,8 +73,9 @@ public class HStest extends BaseTest {
         WebDriverRunner.getWebDriver().switchTo().frame(iframe);
         WebElement attachFile = $(By.xpath("//*[@class='RvKo0zJ']")).shouldBe(visible, Duration.ofMillis(5000));
         attachFile.click();
+        attachFile.sendKeys(Keys.ESCAPE);
         Thread.sleep(5000);
-        Selenide.closeWindow();
+
     }
 
     @Test
@@ -128,9 +123,7 @@ public class HStest extends BaseTest {
         WebDriverRunner.getWebDriver().switchTo().frame(iframe1);
         SelenideElement captchaVerification = $(By.xpath("(//div[@class='rc-anchor-center-container']//*)[3]"));
         captchaVerification.click();
-        Thread.sleep(5000);
-        WebElement iframe2 = $(By.xpath("(*//div[@id='modal-sidebar-frame-container']/*)[2]"));
-        WebDriverRunner.getWebDriver().switchTo().frame(iframe2);
+        WebDriverRunner.getWebDriver().switchTo().parentFrame();
         SelenideElement sendButton = $(By.xpath("*//div[@class='xlvBa4A CIIo+ZN']/following-sibling::*")).shouldBe(visible, Duration.ofMillis(5000));
         sendButton.click();
         SelenideElement inputAlert = $(By.xpath("//div[contains(text(), 'Input your email')]")).shouldBe(visible, Duration.ofMillis(5000));

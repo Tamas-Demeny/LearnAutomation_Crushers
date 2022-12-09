@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="first4TestsHelpSupport">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="total8TestsHelpSupport">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/helpSupportTests/HStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpSupportTests/HStest.java" afterDir="false" />
     </list>
@@ -101,7 +101,7 @@
       <command value="LearnAutomation_Crushers [allureReport]" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HStest.sendMessageHS">
+  <component name="RunManager" selected="Gradle.HStest.attachFile">
     <configuration name="HStest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,8 +219,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HStest.sendMessageHS" />
         <item itemvalue="Gradle.HStest.attachFile" />
+        <item itemvalue="Gradle.HStest.sendMessageHS" />
         <item itemvalue="Gradle.HStest.numberOfCharactersMessage2" />
         <item itemvalue="Gradle.HStest.numberOfCharactersMessage1" />
         <item itemvalue="Gradle.HStest" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669632185210</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="total8TestsHelpSupport">
+      <created>1670419607367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419607367</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firstTestHelpSupport" />
     <MESSAGE value="first4TestsHelpSupport" />
-    <option name="LAST_COMMIT_MESSAGE" value="first4TestsHelpSupport" />
+    <MESSAGE value="total8TestsHelpSupport" />
+    <option name="LAST_COMMIT_MESSAGE" value="total8TestsHelpSupport" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
