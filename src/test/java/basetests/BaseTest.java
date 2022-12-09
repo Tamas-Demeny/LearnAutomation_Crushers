@@ -7,4 +7,5 @@ public class BaseTest {
     public void openStartPage() {
 
     }
+
 }
