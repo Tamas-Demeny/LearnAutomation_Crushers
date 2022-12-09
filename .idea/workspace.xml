@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="code refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +151,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LanguageChangeTests.selectEnglishLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectEnglishLanguage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LanguageChangeTests.selectGermanLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -167,29 +188,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectGermanLanguage&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LanguageChangeTests.selectHungaryLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectHungaryLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,10 +223,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.LanguageChangeTests" />
-        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
         <item itemvalue="Gradle.LanguageChangeTests.selectPolishLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
-        <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectEnglishLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
       </list>
     </recent_temporary>
   </component>
