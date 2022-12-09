@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.example.BasePage;
 import org.example.HelperMethods.SupportMethods;
@@ -12,6 +13,7 @@ import org.example.BasePage;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class HomePage extends BasePage {
 
@@ -27,11 +29,16 @@ public class HomePage extends BasePage {
     SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
     SelenideElement dropDownMenu = $(By.xpath("//div[@class=\"location-selector-ui header__control\"]/button"));
     SelenideElement locationSelectorTitle = $(By.xpath("//strong[@class=\"location-selector__title\"]"));
+
+    public String getGlobalEnglishLinkText() {
+        return globalEnglishLink.getText();
+    }
+
     SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
     SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
     SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
     SelenideElement polandLink = $(By.xpath("//li[@class=\"location-selector__item\"][11]/a"));
-
+    ElementsCollection languagesList = $$(By.xpath("//li[@class=\"location-selector__item\"]"));
     public HomePage(){
         openBasePage();
     }
@@ -121,6 +128,10 @@ public class HomePage extends BasePage {
     public PolandHomePage clickPolska(){
         polandLink.click();
         return new PolandHomePage();
+    }
+
+    public int numberOfLanguages(){
+        return languagesList.size();
     }
 
 }

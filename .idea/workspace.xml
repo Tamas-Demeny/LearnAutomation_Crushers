@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="Added Poland home page and poland language test">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="code refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,10 +225,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.LanguageChangeTests" />
+        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
         <item itemvalue="Gradle.LanguageChangeTests.selectPolishLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
         <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
-        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670484218440</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="code refactoring">
+      <created>1670487203772</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487203772</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +295,8 @@
     <MESSAGE value="HomePage code refactoring" />
     <MESSAGE value="german and hungarian languages tests refactoring" />
     <MESSAGE value="Added Poland home page and poland language test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Poland home page and poland language test" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

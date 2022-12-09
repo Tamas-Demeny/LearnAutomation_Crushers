@@ -16,6 +16,8 @@ public class LanguageChangeTests extends EpamBaseTest {
         var dropDownMenu = new HomePage()
                 .clickLanguageDropDown()
                 .checkLanguageDropDownVisible();
+
+        Assert.assertEquals(dropDownMenu.numberOfLanguages(), 11);
     }
 
     @Test
