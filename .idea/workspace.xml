@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added dismissCookies method">
-      <change afterPath="$PROJECT_DIR$/src/test/java/basetests/CareersBaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basetests/CareersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/CareersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/CareersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HowWeDoItPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HowWeDoItPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basetests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
