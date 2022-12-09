@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added dismissCookies method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" afterDir="false" />
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="code refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/epamcomautomation/languagechange/LanguageChangeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +99,15 @@
       <command value="LearnAutomation_Crushers [allureReport]" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CareersTest">
-    <configuration name="CareersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="ShConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.LanguageChangeTests">
+    <configuration name="LanguageChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.CareersTest&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.dropDownMenuAppears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.dropDownMenuAppears&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CareersTest.testKeywordFunctionalityWithInexistingKeyword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectGermanLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.CareersTest.testKeywordFunctionalityWithInexistingKeyword&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectGermanLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CareersTest.testLocationFunctionality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectHungaryLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +189,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.CareersTest.testLocationFunctionality&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectHungaryLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,7 +199,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CareersTest.testSkillFunctionality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LanguageChangeTests.selectPolishLanguage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -203,7 +212,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.CareersTest.testSkillFunctionality&quot;" />
+            <option value="&quot;epamcomautomation.languagechange.LanguageChangeTests.selectPolishLanguage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CareersTest" />
-        <item itemvalue="Gradle.CareersTest.testLocationFunctionality" />
-        <item itemvalue="Gradle.CareersTest.testSkillFunctionality" />
-        <item itemvalue="Gradle.CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword" />
-        <item itemvalue="Gradle.CareersTest.testKeywordFunctionalityWithInexistingKeyword" />
+        <item itemvalue="Gradle.LanguageChangeTests" />
+        <item itemvalue="Gradle.LanguageChangeTests.dropDownMenuAppears" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectPolishLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectGermanLanguage" />
+        <item itemvalue="Gradle.LanguageChangeTests.selectHungaryLanguage" />
       </list>
     </recent_temporary>
   </component>
@@ -232,14 +241,42 @@
       <option name="presentableId" value="Default" />
       <updated>1669203874677</updated>
     </task>
-    <task id="LOCAL-00001" summary="added dismissCookies method">
-      <created>1670315746154</created>
+    <task id="LOCAL-00001" summary="added Pages">
+      <created>1669635164227</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1670315746154</updated>
+      <updated>1669635164227</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HomePage code refactoring">
+      <created>1670316097681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670316097681</updated>
+    </task>
+    <task id="LOCAL-00003" summary="german and hungarian languages tests refactoring">
+      <created>1670401522720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670401522720</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Poland home page and poland language test">
+      <created>1670484218440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670484218440</updated>
+    </task>
+    <task id="LOCAL-00005" summary="code refactoring">
+      <created>1670487203772</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487203772</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,8 +291,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added dismissCookies method" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dismissCookies method" />
+    <MESSAGE value="added Pages" />
+    <MESSAGE value="HomePage code refactoring" />
+    <MESSAGE value="german and hungarian languages tests refactoring" />
+    <MESSAGE value="Added Poland home page and poland language test" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

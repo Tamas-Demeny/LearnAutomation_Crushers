@@ -123,4 +123,11 @@ public class CareersPage extends BasePage {
         searchResultHeading.shouldBe(Condition.visible);
         return searchResultHeading.getText().toLowerCase();
     }
+
+    private SelenideElement workWithUsLabel = $(By.xpath("//h1[contains(@class,'title-ui')]"));
+
+
+    public String getWelcomeLabel(){
+        return workWithUsLabel.getText();
+    }
 }
