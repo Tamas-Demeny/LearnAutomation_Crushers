@@ -8,10 +8,6 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.visible;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
-import org.example.BasePage;
-import org.openqa.selenium.By;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
