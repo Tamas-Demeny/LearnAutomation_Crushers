@@ -13,17 +13,18 @@ public class LanguageChangeTests extends EpamBaseTest {
 
     @Test
     public void dropDownMenuAppears() {
-        var dropDownMenu = new HomePage()
+        HomePage hp = new HomePage()
                 .clickLanguageDropDown()
                 .checkLanguageDropDownVisible();
 
-        Assert.assertEquals(dropDownMenu.numberOfLanguages(), 11);
+        Assert.assertEquals(hp.numberOfLanguages(), 11);
     }
 
     @Test
     public void selectEnglishLanguage(){
-        var englishLanguage = new HomePage()
-                .clickLanguageDropDown()
+        HomePage hp = new HomePage();
+
+        hp.clickLanguageDropDown()
                 .clickGlobalEnglish()
                 .checkLanguageDropDownNotVisible();
 
@@ -33,10 +34,10 @@ public class LanguageChangeTests extends EpamBaseTest {
 
     @Test
     public void selectHungaryLanguage(){
-        var hungaryLanguage = new HomePage()
-                .clickLanguageDropDown()
-                .clickHungary();
+        HomePage hp = new HomePage();
 
+        hp.clickLanguageDropDown()
+                .clickHungary();
 
         webdriver().shouldHave(url("https://careers.epam.hu/"));
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
@@ -45,8 +46,9 @@ public class LanguageChangeTests extends EpamBaseTest {
 
     @Test
     public void selectGermanLanguage(){
-        var germanLanguage = new HomePage()
-                .clickLanguageDropDown()
+        HomePage hp = new HomePage();
+
+        hp.clickLanguageDropDown()
                 .clickDach();
 
         webdriver().shouldHave(url("https://www.epam.de/"));
@@ -56,8 +58,9 @@ public class LanguageChangeTests extends EpamBaseTest {
 
     @Test
     public void selectPolishLanguage(){
-        var polishLanguage = new HomePage()
-                .clickLanguageDropDown()
+        HomePage hp = new HomePage();
+
+        hp.clickLanguageDropDown()
                 .clickPolska()
                 .checkIfElementIsPolish();
 
