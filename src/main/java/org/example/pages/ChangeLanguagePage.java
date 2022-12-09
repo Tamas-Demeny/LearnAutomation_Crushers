@@ -20,10 +20,6 @@ public class ChangeLanguagePage extends BasePage {
     public int languageListSize(){
         return languageList.size();
     }
-    
+
     }
 
-
-
-
-}
