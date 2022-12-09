@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added Pages">
+    <list default="true" id="ba2e8d3f-2728-4991-9477-53c64d995ab8" name="Changes" comment="added dismissCookies method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/basetests/CareersBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basetests/CareersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HelperMethods/SupportMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/CareersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/CareersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HowWeDoItPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HowWeDoItPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basetests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetests/EpamBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +71,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DEV-EPAM-NavigationBar" />
+        <entry key="$PROJECT_DIR$" value="DEV-EPAM" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,15 +105,8 @@
       <command value="LearnAutomation_Crushers [allureReport]" />
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="ShConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Gradle.EpamBaseTest.openHomePage">
-    <configuration name="BaseTest.openStartPage (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CareersTest">
+    <configuration name="CareersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.BaseTest.openStartPage&quot;" />
+            <option value="&quot;basetests.CareersTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +129,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EpamBaseTest.openHomePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.EpamBaseTest.openHomePage&quot;" />
+            <option value="&quot;basetests.CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +152,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EpamBaseTest.openHowWeDoItPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CareersTest.testKeywordFunctionalityWithInexistingKeyword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +165,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basetests.EpamBaseTest.openHowWeDoItPageTest&quot;" />
+            <option value="&quot;basetests.CareersTest.testKeywordFunctionalityWithInexistingKeyword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,7 +175,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LearnAutomation_Crushers [:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CareersTest.testLocationFunctionality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -188,17 +186,19 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;basetests.CareersTest.testLocationFunctionality&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LearnAutomation_Crushers [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CareersTest.testSkillFunctionality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -209,23 +209,25 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;basetests.CareersTest.testSkillFunctionality&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EpamBaseTest.openHomePage" />
-        <item itemvalue="Gradle.EpamBaseTest.openHowWeDoItPageTest" />
-        <item itemvalue="Gradle.BaseTest.openStartPage (1)" />
-        <item itemvalue="Gradle.LearnAutomation_Crushers [:clean]" />
-        <item itemvalue="Gradle.LearnAutomation_Crushers [clean]" />
+        <item itemvalue="Gradle.CareersTest" />
+        <item itemvalue="Gradle.CareersTest.testLocationFunctionality" />
+        <item itemvalue="Gradle.CareersTest.testSkillFunctionality" />
+        <item itemvalue="Gradle.CareersTest.testKeywordFunctionalityWithFirstLettersOfKeyword" />
+        <item itemvalue="Gradle.CareersTest.testKeywordFunctionalityWithInexistingKeyword" />
       </list>
     </recent_temporary>
   </component>
@@ -238,12 +240,12 @@
       <option name="presentableId" value="Default" />
       <updated>1669203874677</updated>
     </task>
-    <task id="LOCAL-00001" summary="added Pages">
-      <created>1669635164227</created>
+    <task id="LOCAL-00001" summary="added dismissCookies method">
+      <created>1670315746154</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1669635164227</updated>
+      <updated>1670315746154</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -260,8 +262,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Pages" />
+    <MESSAGE value="added dismissCookies method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dismissCookies method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

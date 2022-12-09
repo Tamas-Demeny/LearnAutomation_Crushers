@@ -21,4 +21,5 @@ public class BaseTest {
         Assert.assertEquals(startPage, url,
                 "We did not get to the expected page.");
     }
+
 }
