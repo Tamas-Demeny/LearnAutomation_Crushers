@@ -10,17 +10,18 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class HomePage extends BasePage {
 
-    SelenideElement welcomeLabel = $(By.xpath("//span[contains(text(),\"Engineering the Future\")]"));
+    private SelenideElement welcomeLabel = $(By.xpath("//span[contains(text(),\"Engineering the Future\")]"));
+    private SelenideElement leadingTechnologiesLabel = $(By.xpath("//span[contains(text(),'leading technology companies')]"));
 
-    SelenideElement servicesPageButton = SupportMethods.getPage("Services");
-    SelenideElement howWeDoItPageButton = SupportMethods.getPage("How We Do It");
-    SelenideElement ourWorkPageButton = SupportMethods.getPage("Our Work");
-    SelenideElement insightsPageButton = SupportMethods.getPage("Insights");
-    SelenideElement aboutPageButton = SupportMethods.getPage("About");
-    SelenideElement careersPageButton = SupportMethods.getPage("Careers");
-    SelenideElement contactUsPageButton = $(By.xpath("//span[contains(text(),\"CONTACT US\")  and @class=\"cta-button__text\"]"));
-    SelenideElement changeLanguagePageButton = $(By.xpath("//*[contains(text(),\"Global\")  and @class=\"location-selector__button\"]"));
-    SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
+    private SelenideElement servicesPageButton = SupportMethods.getPage("Services");
+    private SelenideElement howWeDoItPageButton = SupportMethods.getPage("How We Do It");
+    private SelenideElement ourWorkPageButton = SupportMethods.getPage("Our Work");
+    private SelenideElement insightsPageButton = SupportMethods.getPage("Insights");
+    private SelenideElement aboutPageButton = SupportMethods.getPage("About");
+    private SelenideElement careersPageButton = SupportMethods.getPage("Careers");
+    private SelenideElement contactUsPageButton = $(By.xpath("//span[contains(text(),\"CONTACT US\")  and @class=\"cta-button__text\"]"));
+    private SelenideElement changeLanguagePageButton = $(By.xpath("//*[contains(text(),\"Global\")  and @class=\"location-selector__button\"]"));
+    private SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
 
     public HomePage(){
         openBasePage();
@@ -33,6 +34,7 @@ public class HomePage extends BasePage {
     public String getWelcomLabel(){
         return welcomeLabel.getText();
     }
+    public String getleadingTechnologiesLabel() { return  leadingTechnologiesLabel.getText();}
 
 
     public ServicesPage openServicesPage(){
