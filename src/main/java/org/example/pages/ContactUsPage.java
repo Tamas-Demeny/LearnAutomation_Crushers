@@ -1,10 +1,12 @@
 package org.example.pages;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.WebDriverRunner;
 import org.example.BasePage;
 import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Selenide.$;
 import org.testng.Assert;
 
 import java.util.ArrayList;
@@ -12,6 +14,18 @@ import java.util.ArrayList;
 import static com.codeborne.selenide.Selenide.*;
 
 public class ContactUsPage extends BasePage {
+
+    private SelenideElement contactUsLabel = $(By.xpath("//h1[contains(@class,'title-ui')]"));
+    private SelenideElement contactUsForm = $(By.xpath("//div[@class='form']"));
+
+
+    public String getWelcomeLabel(){
+        return contactUsLabel.getText();
+    }
+
+   public boolean contactUsFormVisible(){
+        return contactUsForm.isDisplayed();
+    }
     SelenideElement titlePage = $(By.xpath("//h1[contains(@class,\"title-ui\")]"));
     SelenideElement formTitle = $(By.xpath("(//h2[contains(@class,\"title-ui\")])[1]"));
     public SelenideElement inquiryDropDownList = $(By.xpath("(//b[@role=\"presentation\"])[1]"));
