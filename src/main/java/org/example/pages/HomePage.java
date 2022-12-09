@@ -29,11 +29,6 @@ public class HomePage extends BasePage {
     SelenideElement searchPageButton = $(By.xpath("//button[@class=\"header-search__button header__icon\"]"));
     SelenideElement dropDownMenu = $(By.xpath("//div[@class=\"location-selector-ui header__control\"]/button"));
     SelenideElement locationSelectorTitle = $(By.xpath("//strong[@class=\"location-selector__title\"]"));
-
-    public String getGlobalEnglishLinkText() {
-        return globalEnglishLink.getText();
-    }
-
     SelenideElement globalEnglishLink = $(By.xpath("//a[@class=\"location-selector__link active\"]"));
     SelenideElement hungaryLink = $(By.xpath("//li[@class=\"location-selector__item\"][2]/a"));
     SelenideElement germanLink = $(By.xpath("//li[@class=\"location-selector__item\"][10]/a"));
@@ -133,5 +128,4 @@ public class HomePage extends BasePage {
     public int numberOfLanguages(){
         return languagesList.size();
     }
-
 }
