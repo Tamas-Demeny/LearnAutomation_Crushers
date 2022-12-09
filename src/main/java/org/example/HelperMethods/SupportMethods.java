@@ -17,6 +17,5 @@ public class SupportMethods {
             SelenideElement acceptButton = $(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
             acceptButton.click();
         }
-        //popup.scrollTo();
     }
 }

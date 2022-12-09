@@ -1,15 +1,12 @@
 package org.example.pages;
-
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.example.BasePage;
 import org.openqa.selenium.By;
-
 import java.time.Duration;
 import java.util.Random;
-
 import static com.codeborne.selenide.Selenide.$;
 
 public class CareersPage extends BasePage {
@@ -84,7 +81,6 @@ public class CareersPage extends BasePage {
         SelenideElement city =
                 $(By.xpath("//li[@title=\"All Cities in " + country.getText() + "\"]"));
         city.shouldBe(Condition.exist, Duration.ofMillis(5000));
-        //System.out.println(city.getText());
         city.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
 
     }
@@ -105,13 +101,11 @@ public class CareersPage extends BasePage {
         allCitiesRendered.shouldBe(Condition.exist,Duration.ofMillis(5000));
         allCitiesRendered.shouldBe(Condition.visible,Duration.ofMillis(5000));
         int numberOfJobsInCountry = jobsByCountry.size();
-        //System.out.println("jobsByCountry.size() = " + numberOfJobsInCountry);
         String finalCountry = country;
         long i = jobsByCountry.stream()
                 .map(x -> x.getText().toLowerCase())
                 .filter(x -> x.contains(finalCountry) || x.contains("remote"))
                 .count();
-
         return i == numberOfJobsInCountry;
     }
 
