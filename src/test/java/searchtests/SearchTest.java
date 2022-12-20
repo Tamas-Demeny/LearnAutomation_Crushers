@@ -51,8 +51,8 @@ public class SearchTest extends BaseTest {
 
     //fifth
     @Test
-    public void clearButtonTest() {
-        boolean checkClearingResultsReturnsAllItems = searchPage
+    public void clearingResultsReturnsAllItemsTest() {
+        boolean validation = searchPage
                 .acceptCookies()
                 .clickSearch()
                 .enterSearchInput(INVALID_INPUT)
@@ -60,7 +60,7 @@ public class SearchTest extends BaseTest {
                 .scrollToFooter(6)
                 .checkCounterMatchesResultsListSize();
 
-        Assert.assertTrue(checkClearingResultsReturnsAllItems, "The counter doesn't work as expected or not all available courses are displayed!");
+        Assert.assertTrue(validation, "The counter doesn't work as expected or not all available courses are displayed!");
     }
 
 }

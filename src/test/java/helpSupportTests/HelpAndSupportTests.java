@@ -1,4 +1,5 @@
-package basetests;
+package helpSupportTests;
+import basetests.BaseTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.example.pages.HelpAndSupportModule;
 import org.example.pages.LearnMainPage;
