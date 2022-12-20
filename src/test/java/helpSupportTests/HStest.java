@@ -27,13 +27,13 @@ public class HStest extends BaseTest {
     @Test
     public void sendEmailAndMessageHS() throws InterruptedException {
         WebElement iframe = $("[src=\"https://menu.epam.com/inapphelp/PublicMode?app=learn-public&lang=en\"]");
-        WebElement hsButton = $(".inAppHelpButton img").shouldBe(visible, Duration.ofMillis(5000));;
+        WebElement hsButton = $(".inAppHelpButton img").shouldBe(visible, Duration.ofMillis(5000));
         hsButton.click();
         WebDriverRunner.getWebDriver().switchTo().frame(iframe);
-        SelenideElement emailField = $("input[placeholder='Your email']").shouldBe(visible, Duration.ofMillis(5000));;
+        SelenideElement emailField = $("input[placeholder='Your email']").shouldBe(visible, Duration.ofMillis(5000));
         emailField.click();
         emailField.sendKeys("andrapurcarea@gmail.com");
-        SelenideElement messageField = $( "textarea[maxlength='2000']").shouldBe(visible, Duration.ofMillis(5000));;
+        SelenideElement messageField = $( "textarea[maxlength='2000']").shouldBe(visible, Duration.ofMillis(5000));
         messageField.click();
         messageField.sendKeys("I can't access something");
     }
@@ -65,18 +65,7 @@ public class HStest extends BaseTest {
         Assert.assertTrue(emailField.isDisplayed()&messageField.isDisplayed());
     }
 
-    @Test
-    public void attachFile() throws InterruptedException {
-        WebElement iframe = $("[src=\"https://menu.epam.com/inapphelp/PublicMode?app=learn-public&lang=en\"]");
-        WebElement hsButton = $(".inAppHelpButton img").shouldBe(visible, Duration.ofMillis(5000));
-        hsButton.click();
-        WebDriverRunner.getWebDriver().switchTo().frame(iframe);
-        WebElement attachFile = $(By.xpath("//*[@class='RvKo0zJ']")).shouldBe(visible, Duration.ofMillis(5000));
-        attachFile.click();
-        attachFile.sendKeys(Keys.ESCAPE);
-        Thread.sleep(5000);
 
-    }
 
     @Test
     public void numberOfCharactersMessage1() throws  InterruptedException {
