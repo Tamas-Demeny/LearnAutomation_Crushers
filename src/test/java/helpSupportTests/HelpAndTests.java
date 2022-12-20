@@ -6,7 +6,7 @@ import org.example.pages.LearnMainPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HelpAndSupportTests extends BaseTest {
+public class HelpAndTests extends BaseTest {
 
     @Test
     public void openHs() {
@@ -21,7 +21,7 @@ public class HelpAndSupportTests extends BaseTest {
                 .switchToIframe()
                 .sendEmail("andrapurcarea@gmail.com")
                 .sendMessage("I can't access something");
-        Assert.assertTrue(page.CheckEmailandMessage("andrapurcarea@gmail.com","I can't access something"));
+        Assert.assertTrue(page.checkEmailandMessage("andrapurcarea@gmail.com","I can't access something"));
 
     }
 
@@ -30,8 +30,8 @@ public class HelpAndSupportTests extends BaseTest {
         HelpAndSupportModule page = new LearnMainPage()
                 .goHelpAndSupportModule()
                 .switchToIframe()
-                .HomeTab();
-        Assert.assertEquals(page.GetContactSupportMessage(), "Encountered a bug or got a question? We're here to help.");
+                .homeTab();
+        Assert.assertEquals(page.getContactSupportMessage(), "Encountered a bug or got a question? We're here to help.");
     }
 
     @Test
@@ -39,9 +39,9 @@ public class HelpAndSupportTests extends BaseTest {
         HelpAndSupportModule page = new LearnMainPage()
                 .goHelpAndSupportModule()
                 .switchToIframe()
-                .HomeTab()
-                .ContactSupportMessage();
-        Assert.assertTrue(page.IsDisplayEmailandMessage());
+                .homeTab()
+                .contactSupportMessage();
+        Assert.assertTrue(page.isDisplayEmailandMessage());
 
     }
 
@@ -51,7 +51,7 @@ public class HelpAndSupportTests extends BaseTest {
                 .goHelpAndSupportModule()
                 .switchToIframe()
                 .sendMessage(getUniqueString(5));
-        Assert.assertEquals(page.GetTextCharacterNumber(), getUniqueString(5).chars().count()+" / 2000");
+        Assert.assertEquals(page.getTextCharacterNumber(), getUniqueString(5).chars().count()+" / 2000");
     }
 
     @Test
@@ -60,7 +60,7 @@ public class HelpAndSupportTests extends BaseTest {
                 .goHelpAndSupportModule()
                 .switchToIframe()
                 .sendMessage(getUniqueString(2006));
-        Assert.assertEquals(page.GetTextCharacterNumber(), "2000 / 2000");
+        Assert.assertEquals(page.getTextCharacterNumber(), "2000 / 2000");
     }
 
     @Test
@@ -70,10 +70,10 @@ public class HelpAndSupportTests extends BaseTest {
                 .switchToIframe()
                 .sendMessage(getUniqueString(6))
                 .switchToIframe1()
-                .CaptchaVerification()
+                .captchaVerification()
                 .returnToIframe()
-                .SendButton();
-        Assert.assertEquals(page.InputAlertGetText(), "Input your email");
+                .sendButton();
+        Assert.assertEquals(page.inputAlertGetText(), "Input your email");
 
     }
     public static String getUniqueString(int length) {

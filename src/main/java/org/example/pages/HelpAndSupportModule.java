@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
+import java.util.Objects;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -32,28 +32,28 @@ public class HelpAndSupportModule {
         return this;
     }
 
-    public HelpAndSupportModule sendMessage(String message){
+    public HelpAndSupportModule sendMessage(String message) {
         messageField.shouldBe(Condition.enabled);
         messageField.click();
         messageField.sendKeys(message);
         return this;
     }
 
-    public boolean CheckEmailandMessage(String expectedEmail, String expectedMessage) {
-        return (emailField.getValue().contains(expectedEmail))&(messageField.getValue().contains(expectedMessage));
+    public boolean checkEmailandMessage(String expectedEmail, String expectedMessage) {
+        return Objects.requireNonNull(emailField.getValue()).contains(expectedEmail) && (Objects.requireNonNull(messageField.getValue()).contains(expectedMessage));
 
     }
 
-    public boolean IsDisplayEmailandMessage(){
-        return emailField.isDisplayed()&messageField.isDisplayed();
+    public boolean isDisplayEmailandMessage() {
+        return emailField.isDisplayed() && messageField.isDisplayed();
     }
 
-    public HelpAndSupportModule switchToIframe(){
+    public HelpAndSupportModule switchToIframe() {
         WebDriverRunner.getWebDriver().switchTo().frame(iframe);
         return this;
     }
 
-    public HelpAndSupportModule switchToIframe1(){
+    public HelpAndSupportModule switchToIframe1() {
         WebDriverRunner.getWebDriver().switchTo().frame(iframe1);
         return this;
     }
@@ -63,44 +63,41 @@ public class HelpAndSupportModule {
         return this;
     }
 
-    public HelpAndSupportModule HomeTab(){
-        homeTab.shouldBe(visible,Duration.ofSeconds(5));
+    public HelpAndSupportModule homeTab() {
+        homeTab.shouldBe(visible, Duration.ofSeconds(5));
         homeTab.click();
         return this;
     }
 
-    public HelpAndSupportModule CaptchaVerification(){
-        captchaVerification.shouldBe(visible,Duration.ofSeconds(5));
+    public HelpAndSupportModule captchaVerification() {
+        captchaVerification.shouldBe(visible, Duration.ofSeconds(5));
         captchaVerification.click();
         return this;
     }
 
-    public HelpAndSupportModule SendButton(){
-        sendButton.shouldBe(visible,Duration.ofSeconds(5));
+    public HelpAndSupportModule sendButton() {
+        sendButton.shouldBe(visible, Duration.ofSeconds(5));
         sendButton.click();
         return this;
     }
 
-    public String InputAlertGetText(){
-        inputAlert.shouldBe(visible,Duration.ofSeconds(5));
+    public String inputAlertGetText() {
+        inputAlert.shouldBe(visible, Duration.ofSeconds(5));
         return inputAlert.getText();
     }
 
-    public HelpAndSupportModule ContactSupportMessage(){
-        contactSupportMessage.shouldBe(visible,Duration.ofSeconds(5));
+    public HelpAndSupportModule contactSupportMessage() {
+        contactSupportMessage.shouldBe(visible, Duration.ofSeconds(5));
         contactSupportMessage.click();
         return this;
     }
 
-    public String GetContactSupportMessage() {
-        contactSupportMessage.shouldBe(visible,Duration.ofSeconds(5));
+    public String getContactSupportMessage() {
+        contactSupportMessage.shouldBe(visible, Duration.ofSeconds(5));
         return contactSupportMessage.getText();
     }
 
-    public String GetTextCharacterNumber() {
+    public String getTextCharacterNumber() {
         return charactersNumbers.getText();
     }
-
-
-
 }

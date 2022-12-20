@@ -3,7 +3,6 @@ package loginTests;
 import basetests.BaseTest;
 import com.codeborne.selenide.SelenideElement;
 import org.example.pages.LearnMainPage;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

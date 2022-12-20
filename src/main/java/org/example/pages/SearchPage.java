@@ -16,18 +16,15 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.example.utils.TypesOfData.VALID_INPUT;
 
 public class SearchPage{
-    private SelenideElement search = $(By.xpath("//input[@type='text' and @class='uui-input']"));
+    private final SelenideElement search = $(By.xpath("//input[@type='text' and @class='uui-input']"));
     private final List<SelenideElement> items = $$(By.xpath("//*[contains(@class, '_1jkUn uui-anchor uui-enabled -clickable')]"));
-    private List<SelenideElement> allItems =  $$(By.xpath("//div[contains(@class,'languageIcon')]"));
-    private SelenideElement errorMessage = $(By.xpath("//div[@class=\"_2Q97x _2CS__ veTRe yezNZ _1c32B _3wIsL gtN2w\"]"));
-    private SelenideElement message = $(By.xpath("//*[@class= \"FilteredListPage_foundedItems__1dZNu\"]"));
-    private SelenideElement catalogButton = $(By.xpath("//*[contains(@class,'_3oTQO uui-button-box uui-enabled uui-active -clickable _1MJpy')]"));
-    private SelenideElement popup = $(By.xpath("//*[contains(@class,'ot-sdk-container')]"));
-    private SelenideElement clearButton = $(By.xpath("//*[contains(@class,'_2XWJb uui-icon uui-enabled -clickable uui-icon-cancel -clickable')]"));
-
-    //private WebElement footer = webdriver().object().findElement(By.xpath("//*[contains(@class,'_1aD3T _1UxEF')]"));
-
-    private WebElement footer = $(By.xpath("//*[contains(@class,'_1aD3T _1UxEF')]"));
+    private final List<SelenideElement> allItems =  $$(By.xpath("//div[contains(@class,'languageIcon')]"));
+    private final SelenideElement errorMessage = $(By.xpath("//div[@class=\"_2Q97x _2CS__ veTRe yezNZ _1c32B _3wIsL gtN2w\"]"));
+    private final SelenideElement message = $(By.xpath("//*[@class= \"FilteredListPage_foundedItems__1dZNu\"]"));
+    private final SelenideElement catalogButton = $(By.xpath("//*[contains(@class,'_3oTQO uui-button-box uui-enabled uui-active -clickable _1MJpy')]"));
+    private final SelenideElement popup = $(By.xpath("//*[contains(@class,'ot-sdk-container')]"));
+    private final SelenideElement clearButton = $(By.xpath("//*[contains(@class,'_2XWJb uui-icon uui-enabled -clickable uui-icon-cancel -clickable')]"));
+    private final WebElement footer = $(By.xpath("//*[contains(@class,'_1aD3T _1UxEF')]"));
     public boolean checkCurrentUrl() {
         Pattern r = Pattern.compile("=([^=]*)$");
         Matcher m = r.matcher(WebDriverRunner.url());
@@ -71,9 +68,6 @@ public class SearchPage{
         return result;
     }
 
-    //waitForResultsToLoad
-    //sa verificam daca primul element care e in lista, sa fi disparut
-
     public boolean checkIfResultsCounterMatches(){
         int result1 = extractCounterFromText(message);
         int result2 = extractCounterFromText(catalogButton);
@@ -103,7 +97,6 @@ public class SearchPage{
             counter++;
         }
         return this;
-        //allItems = $$(By.xpath("//div[contains(@class,'languageIcon')]"));
     }
 
     public int getResultsListSize(){

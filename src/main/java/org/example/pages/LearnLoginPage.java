@@ -10,12 +10,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LearnLoginPage {
 
-    private SelenideElement emailField = $("#username");
-    private SelenideElement continueButton = $("#kc-login-next");
-    private SelenideElement passwordField = $("#password");
-    private SelenideElement signInButton = $("#kc-login");
-    private SelenideElement accountDetailsMessage = $("#header2");
-    private SelenideElement logInOptionMessage = $("#chooseContainer");
+    private final SelenideElement emailField = $("#username");
+    private final SelenideElement continueButton = $("#kc-login-next");
+    private final SelenideElement passwordField = $("#password");
+    private final SelenideElement signInButton = $("#kc-login");
+    private final SelenideElement accountDetailsMessage = $("#header2");
+    private final SelenideElement logInOptionMessage = $("#chooseContainer");
 
     public LearnMainPage loginViaEmail(String email, String password){
         logInFlow(email, password);
