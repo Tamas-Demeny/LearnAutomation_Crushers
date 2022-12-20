@@ -1,5 +1,7 @@
 package org.example.pages;
+import java.time.Duration;
 
+import static com.codeborne.selenide.Condition.visible;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -11,6 +13,12 @@ public class LearnMainPage {
     private WebElement signOutButton = $(By.xpath("//div[@class='uui-caption' and text()='Sign out']"));
     private WebElement searchField = $(".uui-input");
     private WebElement acceptAllCookiesButton = $("#onetrust-accept-btn-handler");
+    private WebElement hsButton = $(".inAppHelpButton img").shouldBe(visible, Duration.ofMillis(5000));
+    
+    public HelpAndSupportModule goHelpAndSupportModule(){
+        hsButton.click();
+        return new HelpAndSupportModule();
+    }
 
     public LearnLoginPage goToLoginPage(){
         logInButton.click();
